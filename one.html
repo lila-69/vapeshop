@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jednorazówki - VapeShop</title>
+  <link rel="stylesheet" href="gpt.css">
+  <style>
+    .one-products {
+      margin-top: 40px;
+    }
+
+    .one-products h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #76c7c0;
+      margin-bottom: 30px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .one-list {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .one-card {
+      background: linear-gradient(145deg, #1c1f25, #2c2f3a);
+      padding: 20px;
+      border-radius: 15px;
+      width: 230px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .one-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.8);
+    }
+
+    .one-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .one-name {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .one-desc {
+      font-size: 0.95rem;
+      margin-top: 8px;
+      color: #aaa;
+      min-height: 50px;
+    }
+
+    .one-price {
+      font-size: 1.1rem;
+      color: #76c7c0;
+      margin-top: 8px;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul class="main-menu">
+        <li><a href="new.html">NOWOŚCI</a></li>
+        <li><a href="standart.html">ZESTAWY STANDARDOWE</a></li>
+        <li><a href="one.html">JEDNORAZÓWKI</a></li>
+		<li><a href="pody.html">PODY</a></li>
+		<li><a href="boxy.html">BOXY</a></li>
+        <li><a href="baterie.html">BATERIE</a></li>
+        <li><a href="gpt.html">POWRÓT</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <header>
+        <h1>Jednorazowe e-papierosy</h1>
+      </header>
+
+      <section class="one-products">
+        <h2>Popularne jednorazówki w naszym sklepie</h2>
+        <div class="one-list">
+          <div class="one-card">
+            <img src="one1.jpg" alt="Jednorazówka 1">
+            <p class="one-name">VapeBar 600</p>
+            <p class="one-desc">Jednorazowy e-papieros o smaku mango, do 600 zaciągnięć.</p>
+            <p class="one-price">Cena: 24,99 PLN</p>
+          </div>
+
+          <div class="one-card">
+            <img src="one2.jpg" alt="Jednorazówka 2">
+            <p class="one-name">IceMint 1200</p>
+            <p class="one-desc">Smak mocnej mięty, bateria do 1200 zaciągnięć.</p>
+            <p class="one-price">Cena: 34,99 PLN</p>
+          </div>
+
+          <div class="one-card">
+            <img src="one3.jpg" alt="Jednorazówka 3">
+            <p class="one-name">BerryMix 800</p>
+            <p class="one-desc">Połączenie owoców leśnych i chłodnego lodu, 800 zaciągnięć.</p>
+            <p class="one-price">Cena: 29,99 PLN</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 VapeShop – Wszystkie prawa zastrzeżone</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="one.js"></script>
+</body>
+</html>

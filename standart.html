@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zestawy Standardowe - VapeShop</title>
+  <link rel="stylesheet" href="gpt.css">
+  <style>
+    .standard-products {
+      margin-top: 40px;
+    }
+
+    .standard-products h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #76c7c0;
+      margin-bottom: 30px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .standard-list {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .standard-card {
+      background: linear-gradient(145deg, #1c1f25, #2c2f3a);
+      padding: 20px;
+      border-radius: 15px;
+      width: 230px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .standard-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.8);
+    }
+
+    .standard-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .standard-name {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .standard-desc {
+      font-size: 0.95rem;
+      margin-top: 8px;
+      color: #aaa;
+      min-height: 50px;
+    }
+
+    .standard-price {
+      font-size: 1.1rem;
+      color: #76c7c0;
+      margin-top: 8px;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul class="main-menu">
+        <li><a href="new.html">NOWOŚCI</a></li>
+        <li><a href="standart.html">ZESTAWY STANDARDOWE</a></li>
+        <li><a href="gpt.html">POWRÓT</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <header>
+        <h1>Zestawy Standardowe</h1>
+      </header>
+
+      <section class="standard-products">
+        <h2>Najlepsze zestawy dla początkujących i zaawansowanych</h2>
+        <div class="standard-list">
+          <div class="standard-card">
+            <img src="set1.jpg" alt="Zestaw 1">
+            <p class="standard-name">Starter Kit Basic</p>
+            <p class="standard-desc">Łatwy w obsłudze zestaw z baterią 1500 mAh i kartridżem 2ml.</p>
+            <p class="standard-price">Cena: 149,99 PLN</p>
+          </div>
+
+          <div class="standard-card">
+            <img src="set2.jpg" alt="Zestaw 2">
+            <p class="standard-name">Power Kit 220W</p>
+            <p class="standard-desc">Mocny zestaw z regulacją mocy i dużym atomizerem.</p>
+            <p class="standard-price">Cena: 329,99 PLN</p>
+          </div>
+
+          <div class="standard-card">
+            <img src="set3.jpg" alt="Zestaw 3">
+            <p class="standard-name">Compact Pod Set</p>
+            <p class="standard-desc">Kompaktowy zestaw typu pod, idealny na co dzień.</p>
+            <p class="standard-price">Cena: 199,99 PLN</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 VapeShop – Wszystkie prawa zastrzeżone</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="standart.js"></script>
+</body>
+</html>

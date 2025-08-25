@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nowości - VapeShop</title>
+  <link rel="stylesheet" href="gpt.css">
+  <style>
+    /* Sekcja NOWOŚCI */
+    .new-products {
+      margin-top: 40px;
+    }
+
+    .new-products h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #76c7c0;
+      margin-bottom: 30px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .new-list {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .new-card {
+      background: linear-gradient(145deg, #1c1f25, #2c2f3a);
+      padding: 20px;
+      border-radius: 15px;
+      width: 230px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .new-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.8);
+    }
+
+    .new-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .new-name {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .new-desc {
+      font-size: 0.95rem;
+      margin-top: 8px;
+      color: #aaa;
+      min-height: 50px;
+    }
+
+    .new-price {
+      font-size: 1.1rem;
+      color: #76c7c0;
+      margin-top: 8px;
+    }
+
+    /* Animacje */
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul class="main-menu">
+        <li><a href="new.html">NOWOŚCI</a></li>
+        <li><a href="gpt.html">POWRÓT</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <header>
+        <h1>Nowości w VapeShopie</h1>
+      </header>
+
+      <section class="new-products">
+        <h2>Świeże dostawy i nowe modele</h2>
+        <div class="new-list">
+          <div class="new-card">
+            <img src="nowosc1.jpg" alt="Nowość 1">
+            <p class="new-name">VapeX Ultra</p>
+            <p class="new-desc">Nowoczesny zestaw z baterią 2500 mAh i regulacją mocy.</p>
+            <p class="new-price">Cena: 299,99 PLN</p>
+          </div>
+
+          <div class="new-card">
+            <img src="nowosc2.jpg" alt="Nowość 2">
+            <p class="new-name">Liquid Blue Ice</p>
+            <p class="new-desc">Chłodny smak jagód z nutą mięty dla orzeźwienia.</p>
+            <p class="new-price">Cena: 24,99 PLN</p>
+          </div>
+
+          <div class="new-card">
+            <img src="nowosc3.jpg" alt="Nowość 3">
+            <p class="new-name">Pod Nano</p>
+            <p class="new-desc">Miniaturowy pod z wymiennymi kartridżami – lekki i wygodny.</p>
+            <p class="new-price">Cena: 159,99 PLN</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 VapeShop – Wszystkie prawa zastrzeżone</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

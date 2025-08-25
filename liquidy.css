@@ -1,0 +1,128 @@
+/* Pasek filtrów */
+.filters {
+  margin: 10px 0 20px;
+}
+.filters-row {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, minmax(140px, 180px)) 120px;
+  gap: 10px;
+}
+.control, .btn {
+  background: #1c1f25;
+  color: #ddd;
+  border: 1px solid #2f3542;
+  padding: 10px 12px;
+  border-radius: 10px;
+  outline: none;
+}
+.control::placeholder { color: #8d99ae; }
+.control:focus {
+  border-color: #76c7c0;
+  box-shadow: 0 0 0 3px rgba(118,199,192,0.12);
+}
+.btn {
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .15s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  background: #232837;
+  border-color: #76c7c0;
+}
+
+/* Lista produktów */
+.category-products { margin-top: 20px; }
+.category-products h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #76c7c0;
+  margin: 10px 0 25px;
+  animation: fadeInDown 1s ease;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.category-card {
+  background: linear-gradient(145deg, #1c1f25, #2c2f3a);
+  padding: 18px;
+  border-radius: 16px;
+  width: 240px;
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  animation: fadeInUp .9s ease;
+  border: 1px solid #2f3542;
+}
+
+.category-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.75);
+  border-color: #76c7c0;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.category-name {
+  font-size: 1.15rem;
+  margin-top: 10px;
+  color: #e6e6e6;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.category-desc {
+  font-size: .95rem;
+  margin-top: 8px;
+  color: #aeb6c2;
+  min-height: 48px;
+}
+
+.category-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.category-badges span {
+  font-size: .75rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #394256;
+  background: #232735;
+  color: #cfd6e1;
+}
+
+.category-price {
+  font-size: 1.1rem;
+  color: #76c7c0;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* Animacje bazowe */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile */
+@media (max-width: 920px) {
+  .filters-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

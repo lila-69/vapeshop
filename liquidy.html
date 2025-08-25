@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liquidy - VapeShop</title>
+  <link rel="stylesheet" href="gpt.css" />
+  <link rel="stylesheet" href="liquidy.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul class="main-menu">
+        <li><a href="new.html">NOWOŚCI</a></li>
+        <li><a href="standart.html">ZESTAWY STANDARDOWE</a></li>
+        <li><a href="one.html">JEDNORAZÓWKI</a></li>
+        <li><a href="pody.html">PODY</a></li>
+        <li><a href="boxy.html">BOXY</a></li>
+        <li><a href="baterie.html">BATERIE</a></li>
+        <li><a href="liquidy.html">LIQUIDY</a></li>
+        <li><a href="gpt.html">POWRÓT</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <header>
+        <h1>Liquidy</h1>
+      </header>
+
+      <!-- PASEK FILTRÓW -->
+      <section class="filters">
+        <div class="filters-row">
+          <input id="q" class="control" type="search" placeholder="Szukaj nazwy/smaku..." />
+          <select id="flavor" class="control">
+            <option value="">Smak: wszystkie</option>
+            <option value="owocowe">Owocowe</option>
+            <option value="deserowe">Deserowe</option>
+            <option value="mentolowe">Mentolowe</option>
+            <option value="klasyczne">Klasyczne</option>
+          </select>
+          <select id="type" class="control">
+            <option value="">Typ: wszystkie</option>
+            <option value="freebase">Freebase</option>
+            <option value="salt">Sól nikotynowa</option>
+          </select>
+          <select id="nic" class="control">
+            <option value="">Nikotyna: wszystkie</option>
+            <option value="0mg">0 mg</option>
+            <option value="3mg">3 mg</option>
+            <option value="6mg">6 mg</option>
+            <option value="12mg">12 mg</option>
+            <option value="salt">SALT</option>
+          </select>
+          <select id="sort" class="control">
+            <option value="">Sortowanie</option>
+            <option value="price-asc">Cena: rosnąco</option>
+            <option value="price-desc">Cena: malejąco</option>
+          </select>
+          <button id="clear" class="btn">Wyczyść</button>
+        </div>
+      </section>
+
+      <!-- LISTA PRODUKTÓW -->
+      <section class="category-products">
+        <h2>Aromaty i smaki do Twojego urządzenia</h2>
+        <div id="list" class="category-list">
+          <!-- Każda karta ma atrybuty data-* do filtrowania -->
+          <div class="category-card"
+               data-flavor="owocowe"
+               data-type="freebase"
+               data-nic="3mg"
+               data-price="24.99">
+            <img src="liq1.jpg" alt="Liquid Blue Ice 3mg">
+            <p class="category-name">Blue Ice</p>
+            <p class="category-desc">Jagody z lekką nutą chłodu. Butelka 10 ml.</p>
+            <p class="category-badges"><span>Freebase</span><span>3 mg</span><span>Owocowe</span></p>
+            <p class="category-price">Cena: 24,99 PLN</p>
+          </div>
+
+          <div class="category-card"
+               data-flavor="deserowe"
+               data-type="freebase"
+               data-nic="6mg"
+               data-price="24.99">
+            <img src="liq2.jpg" alt="Liquid Caramel Custard 6mg">
+            <p class="category-name">Caramel Custard</p>
+            <p class="category-desc">Kremowy waniliowy deser z karmelem. 10 ml.</p>
+            <p class="category-badges"><span>Freebase</span><span>6 mg</span><span>Deserowe</span></p>
+            <p class="category-price">Cena: 24,99 PLN</p>
+          </div>
+
+          <div class="category-card"
+               data-flavor="mentolowe"
+               data-type="salt"
+               data-nic="salt"
+               data-price="26.99">
+            <img src="liq3.jpg" alt="Liquid IceMint SALT">
+            <p class="category-name">IceMint SALT</p>
+            <p class="category-desc">Mocno mentolowy chłód – nikotyna SALT. 10 ml.</p>
+            <p class="category-badges"><span>SALT</span><span>Mentolowe</span></p>
+            <p class="category-price">Cena: 26,99 PLN</p>
+          </div>
+
+          <div class="category-card"
+               data-flavor="klasyczne"
+               data-type="freebase"
+               data-nic="12mg"
+               data-price="22.99">
+            <img src="liq4.jpg" alt="Liquid Classic Tobacco 12mg">
+            <p class="category-name">Classic Tobacco</p>
+            <p class="category-desc">Klasyczny tytoniowy profil smakowy. 10 ml.</p>
+            <p class="category-badges"><span>Freebase</span><span>12 mg</span><span>Klasyczne</span></p>
+            <p class="category-price">Cena: 22,99 PLN</p>
+          </div>
+
+          <div class="category-card"
+               data-flavor="owocowe"
+               data-type="salt"
+               data-nic="salt"
+               data-price="27.99">
+            <img src="liq5.jpg" alt="Liquid Tropical SALT">
+            <p class="category-name">Tropical SALT</p>
+            <p class="category-desc">Mango, marakuja i ananas – intensywny miks. 10 ml.</p>
+            <p class="category-badges"><span>SALT</span><span>Owocowe</span></p>
+            <p class="category-price">Cena: 27,99 PLN</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 VapeShop – Wszystkie prawa zastrzeżone</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="liquidy.js"></script>
+</body>
+</html>
